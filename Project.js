@@ -22,8 +22,14 @@ const submit = () => {
     var MM = date.slice(5,7)
     var DD = date.slice(8,10)
     
-    var dayOfTheWeek = (((CC/4)-2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD) % 7
+    // formula for the the day of the week
+    var dayOfTheWeek = (((CC/4)-2*CC-1) + ((5*YY/4))+((26*(MM+1)/10))+DD)%7
 
-     console.log(dayOfTheWeek)
+    // console.log(Math.floor(dayOfTheWeek))
+
+    // Pendo's approach
+    
+    
+
 
 }
