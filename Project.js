@@ -13,6 +13,17 @@ const submit = () => {
     const gender = genderElement.value;
     const submit = [date, gender];
 
-    console.log(submit)
+    // console.log(submit)
+
+    // Retrieve the date values from the date of birth for us to run the day of the week function
+    
+    var CC = date.slice(0,2)
+    var YY = date.slice(2,4)
+    var MM = date.slice(5,7)
+    var DD = date.slice(8,10)
+    
+    var dayOfTheWeek = (((CC/4)-2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD) % 7
+
+     console.log(dayOfTheWeek)
 
 }
