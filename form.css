@@ -1,0 +1,26 @@
+form{
+    background-color: antiquewhite;
+    text-align: justify;
+}
+
+h1{
+    color: blueviolet;
+}
+
+body{
+    background-color: burlywood;
+    border: 60pt;
+    margin: 60pt;
+    padding: 10pt;
+}
+
+input{
+    border: 2pt;
+    margin: 20pt;
+    padding: 5pt;
+    border-style: solid;
+}
+
+button{
+    color: brown;
+}
