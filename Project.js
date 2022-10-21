@@ -27,7 +27,7 @@ const submit = () => {
 
     console.log(dayOfTheWeek)
 
-    // Pendo's approach
+   
     
     
 
