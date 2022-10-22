@@ -18,6 +18,6 @@ body{
 button{
     display: inline-block;
     color: black;
-   align-self: center; 
-   padding: 10px;   
+    align-self: center; 
+    padding: 10px;   
 }
