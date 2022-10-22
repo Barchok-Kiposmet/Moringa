@@ -17,10 +17,10 @@ const submit = () => {
 
     // Retrieve the date values from the date of birth for us to run the day of the week function
     
-    var CC = date.slice(0,2)
-    var YY = date.slice(2,4)
-    var MM = date.slice(5,7)
-    var DD = date.slice(8,10)
+    var CC = Number(date.slice(0,2));
+    var YY = Number(date.slice(2,4));
+    var MM = Number(date.slice(5,7));
+    var DD = Number(date.slice(8,10));
 
     const dates = [CC, YY, MM, DD]
     
@@ -39,17 +39,32 @@ const submit = () => {
 
     // Testing the result against the gender results
 
-   if (gender == "Male" & dayOfTheWeek == index) {
-            alert ('You were born on' + daysOfTheWeek[0] + 'Your Akan Name is' + maleNames[0])
-   } else {
-    alert('You were born on a' + daysOfTheWeek[0] + 'You Akan Name is' + femaleNames[0])
-   }
+   
+    // var index = dayOfTheWeek-1;
+     var index;
+  // fix formula bug
 
-//    if (gender == "Male" & dayOfTheWeek == 1) {
-//         alert ('You were born on a' + daysOfTheWeek[1] + 'Your Akan Name is' + maleNames[1])
-//     } else {
-//         alert('You were born on a' + daysOfTheWeek[1] + 'You Akan Name is' + femaleNames[1])
-//     }
+        if (dayOfTheWeek == 0){
+         index = 6;
+            } else {
+             index = dayOfTheWeek - 1;
+            }
+
+        if (date ==''){
+
+            alert('Please enter a valid date of birth')
+        }    
+
+        if (gender == 'Null'){
+            alert('Please select your Gender')
+        }
+
+        if (gender == "Male") {
+            document.getElementById("results").textContent = ('You were born on' + daysOfTheWeek[index] + 'Your Akan Name is' + maleNames[index])
+        } else {
+            document.getElementById("results").textContent = ('You were born on a' + daysOfTheWeek[index] + 'You Akan Name is' + femaleNames[index])
+        }
+
     
     console.log(submit)
 
