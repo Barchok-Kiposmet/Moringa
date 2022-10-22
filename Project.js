@@ -50,14 +50,14 @@ const submit = () => {
              index = dayOfTheWeek - 1;
             }
 
-        // if (date ==''){
+        if (date ==''){
 
-        //     alert('Please enter a valid date of birth')
-        // }    
+            alert('Please enter a valid date of birth')
+        }    
 
-        // if (gender == 'Null'){
-        //     alert('Please select your Gender')
-        // }
+        if (gender == 'Null'){
+            alert('Please select your Gender')
+        }
 
         if (gender == "Male") {
 
