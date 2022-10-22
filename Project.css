@@ -7,3 +7,8 @@ body{
     background-color: bisque;
     align-items: center;
 }
+
+button{
+    color: blue;
+   align-self: center;    
+}

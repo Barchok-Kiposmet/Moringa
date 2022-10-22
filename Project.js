@@ -50,17 +50,17 @@ const submit = () => {
              index = dayOfTheWeek - 1;
             }
 
-        if (date ==''){
+        // if (date ==''){
 
-            alert('Please enter a valid date of birth')
-        }    
+        //     alert('Please enter a valid date of birth')
+        // }    
 
-        if (gender == 'Null'){
-            alert('Please select your Gender')
-        }
+        // if (gender == 'Null'){
+        //     alert('Please select your Gender')
+        // }
 
         if (gender == "Male") {
-            document.getElementById("results").textContent = ('You were born on' + daysOfTheWeek[index] + 'Your Akan Name is' + maleNames[index])
+            document.getElementById("results").textContent = ('You were born on a' + ' ' + daysOfTheWeek[index] + '.' + ' ' + 'Your Akan Name is' + ' ' + maleNames[index])
         } else {
             document.getElementById("results").textContent = ('You were born on a' + daysOfTheWeek[index] + 'You Akan Name is' + femaleNames[index])
         }
