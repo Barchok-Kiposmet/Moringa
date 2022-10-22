@@ -62,7 +62,7 @@ const submit = () => {
         if (gender == "Male") {
             document.getElementById("results").textContent = ('You were born on a' + ' ' + daysOfTheWeek[index] + '.' + ' ' + 'Your Akan Name is' + ' ' + maleNames[index])
         } else {
-            document.getElementById("results").textContent = ('You were born on a' + daysOfTheWeek[index] + 'You Akan Name is' + femaleNames[index])
+            document.getElementById("results").textContent = ('You were born on a' + ' ' + daysOfTheWeek[index] + '.' + 'You Akan Name is' + ' ' + femaleNames[index])
         }
 
     
