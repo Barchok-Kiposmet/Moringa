@@ -49,7 +49,8 @@ const submit = () => {
             } else {
              index = dayOfTheWeek - 1;
             }
-
+    // Alerts and checks
+    
         if (date ==''){
 
             alert('Please enter a valid date of birth')
