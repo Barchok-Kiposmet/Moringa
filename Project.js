@@ -22,7 +22,7 @@ const submit = () => {
     var MM = Number(date.slice(5,7));
     var DD = Number(date.slice(8,10));
 
-    const dates = [CC, YY, MM, DD]
+    var dates = [CC, YY, MM, DD]
     
     // formula for the the day of the week
 
@@ -63,14 +63,21 @@ const submit = () => {
 
             document.getElementById("results").textContent = ('You were born on a' + ' ' + daysOfTheWeek[index] + '.' + ' ' + 'Your Akan Name is' + ' ' + maleNames[index])
         } 
-        else { 
+        else if (gender == "Female") { 
 
             document.getElementById("results").textContent = ('You were born on a' + ' ' + daysOfTheWeek[index] + '.' + 'Your Akan Name is' + ' ' + femaleNames[index])
         }
-             
+        else {
+            alert('Kindly enter correct data.')
+        }
+        
+        // let btnClear = document.querySelector('button');
+        // let inputs = document.querySelectorAll('input');
+
+        // btnClear.addEventListener('click', () => {
+        //     inputs.forEach(input => input.value = 'submit')
+        // });
     
     console.log(submit)
-
-
 
 }
