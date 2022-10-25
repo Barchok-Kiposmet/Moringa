@@ -36,6 +36,7 @@ const submit = () => {
 
        
     // var index = dayOfTheWeek-1;
+    
      var index;
 
   // fix formula bug where there was a decimal point and failing to allign
