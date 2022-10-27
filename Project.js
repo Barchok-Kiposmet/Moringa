@@ -71,7 +71,8 @@ const submit = () => {
             alert('Kindly enter correct data.')
         }
         
-        /// Clear button
+        /// Clear button to clear the page to null values
+        
         document.getElementById("clear").onclick = function() {
         document.getElementById("myBirthday").value = "";
         document.getElementById("gender").value = 'null';
