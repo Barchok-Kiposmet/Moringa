@@ -71,12 +71,20 @@ const submit = () => {
             alert('Kindly enter correct data.')
         }
         
-        // let btnClear = document.querySelector('clear');
-        // let inputs = document.querySelectorAll('input');
+        /// Clear button
+        document.getElementById("clear").onclick = function() {
+        document.getElementById("myBirthday").value = "";
+        document.getElementById("gender").value = 'null';
+        document.getElementById("results").textContent = "";
+        }
 
-        // btnClear.addEventListener('click',() => {
-        //     inputs.forEach(input = inputs.value = '')
-        // });
+        let btnClear = document.querySelector('button');
+        let inputs = document.querySelectorAll('input');
+        btnClear.addEventListener('click', () =>{
+            inputs.forEach(input  => input.value = '');
+        });
+
+
     
     console.log(submit)
 
